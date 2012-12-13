@@ -347,7 +347,7 @@ class CursorWrapper(object):
         fr = []
         for row in rows:
             if isinstance(row, str):
-                fr.append(row.decode('utf-8'))
+                fr.append(row.decode('Latin-1'))
             else:
                 fr.append(row)
         return tuple(fr)
